@@ -4,8 +4,9 @@
   "description": "api",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "module"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,18 @@
   },
   "homepage": "https://github.com/timmygospel/heycheekydealsApi#readme",
   "dependencies": {
+    "@graphql-tools/schema": "^9.0.4",
+    "apollo-server-express": "^3.10.3",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "graphql": "^16.6.0",
     "helmet": "^6.0.0",
     "mongoose": "^6.6.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
     "@babel/node": "^7.19.1",
     "eslint": "^8.25.0",
     "nodemon": "^2.0.20"
